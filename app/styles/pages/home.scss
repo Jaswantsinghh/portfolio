@@ -1,0 +1,67 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-left {
+        width: 50%;
+        padding-left: 10%;
+        padding-top: 160px;
+
+        &-title {
+
+            &-intro {
+                font-size: $body-font-size;
+                color: $secondary-color-4;
+                line-height: 0;
+            }
+
+            &-name {
+                font-size: $heading-font-size;
+                font-weight: normal;
+                color: $secondary-color-4;
+                line-height: 36px;
+            }
+
+            &-position {
+                font-size: $subheading-font-size;
+                color: $secondary-color-3;
+                line-height: 0;
+            }
+        }
+
+        &-code {
+            margin-top: 120px;
+            &-text {
+                font-size: $label-font-size;
+                color: $secondary-color-1;
+            }
+
+            &-github {
+
+                font-size: $label-font-size;
+                font-weight: 500;
+
+                &-const {
+                    color: $secondary-color-3;
+                }
+
+                &-variable {
+                    color: $secondary-color-2;
+                }
+
+                &-equal {
+                    color: $secondary-color-4;
+                }
+
+                &-url {
+                    color: $accent-color-3;
+                }
+            }
+        }
+    }
+
+    &-right {
+        width: 50%;
+    }
+}
