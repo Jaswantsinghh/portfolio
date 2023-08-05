@@ -1,0 +1,69 @@
+.navbar {
+    color: $secondary-color-1;
+    font-size: $label-font-size;
+    border-bottom: 1px solid $line-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-right: 0;
+
+    &-container {
+        display: flex;
+    }
+    
+    &-options {
+        display: flex;
+        cursor: pointer;
+
+        &-option {
+            padding: 6px 20px 6px 20px;
+            border-right: 1px solid $line-color;
+
+            &.active {
+                border-bottom: 3px solid $accent-color-1;
+                color: $secondary-color-4;
+                animation: drawBorder 1s ease forwards;
+            }
+        }
+    }
+
+    &-name {
+        min-width: 360px;
+        border-right: 1px solid $line-color;
+        padding: 6px 0 6px 0;
+    }
+
+    &-contact {
+        border-left: 1px solid $line-color;
+        padding: 6px 20px 6px 20px;
+        cursor: pointer;
+
+        &.active {
+            border-bottom: 3px solid $accent-color-1;
+            color: $secondary-color-4;
+            animation: drawBorder 1s ease forwards;
+        }
+    }
+}
+
+@keyframes drawBorder {
+    0% {
+        border-bottom: 3px solid #f3f3f3;
+    }
+
+    25% {
+        border-bottom: 3px solid #f9c59d;
+    }
+
+    50% {
+        border-bottom: 3px solid #f8ad74;
+    }
+
+    75% {
+        border-bottom: 3px solid #f1a66c;
+    }
+
+    100% {
+        border-bottom: 3px solid $accent-color-1;
+    }
+  }
