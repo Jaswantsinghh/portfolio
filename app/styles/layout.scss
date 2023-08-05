@@ -8,4 +8,6 @@ body {
 
 .layout {
     background: $primary-color-2;
+    position: relative;
+    min-height: 100vh;
 }

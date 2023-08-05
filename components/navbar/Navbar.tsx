@@ -4,7 +4,7 @@ import react, { useState } from "react";
 
 export default function Navbar() {
     const [selectedOption, setSelectedOption] = useState("");
-
+    
     const onOptionClick = (e: react.MouseEvent<HTMLDivElement, MouseEvent>, option: string) => {
         e.preventDefault();
         setSelectedOption(option);
@@ -21,14 +21,14 @@ export default function Navbar() {
                 <div className="navbar-options">
                     {
                         OPTIONS.map((option) => (
-                            <div className={`navbar-options-option ${selectedOption === option && 'active'}`} key={option} onClick={(e) => onOptionClick(e, option)}>
+                            <div className={`navbar-options-option ${selectedOption === option ? 'active' : ''}`} key={option} onClick={(e) => onOptionClick(e, option)}>
                                 <p>{option}</p>
                             </div>
                         ))
                     }
                 </div>
             </div>
-            <div className={`navbar-contact ${selectedOption === 'contact' && 'active'}`} onClick={(e) => onOptionClick(e, "contact")}>
+            <div className={`navbar-contact ${selectedOption === 'contact' ? 'active' : ''}`} onClick={(e) => onOptionClick(e, "contact")}>
                 <p>_contact-me</p>
             </div>
         </div>
