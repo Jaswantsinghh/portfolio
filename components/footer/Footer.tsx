@@ -16,16 +16,16 @@ export default function Footer() {
                         <p>find me in:</p>
                     </div>
                     <div className="footer-container-social-icon" onClick={onOpenLink('https://twitter.com/CodeComposer009')}>
-                        <TwitterIcon />
+                        <TwitterIcon className="twitter" />
                     </div>
                     <div className="footer-container-social-icon" onClick={onOpenLink('https://www.facebook.com/jaswantsinghjsn')}>
-                        <FacebookIcon />
+                        <FacebookIcon className="facebook" />
                     </div>
                 </div>
                 <div className="footer-container-github" onClick={onOpenLink('https://www.github.com/jaswantsinghh')}>
                     <p className="footer-container-github-handle">@jaswantsinghh</p>
                     <div className="footer-container-github-icon">
-                        <GithubIcon />
+                        <GithubIcon className="github" />
                     </div>
                 </div>
             </div>
